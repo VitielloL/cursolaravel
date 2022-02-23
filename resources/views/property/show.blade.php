@@ -1,3 +1,7 @@
+@extends('property.master')
+
+@section('content')
+
 <h1>Pagina Single</h1>
 
 <?php
@@ -19,4 +23,7 @@
         }
     }
 
+    ?>
+
+@endsection
 

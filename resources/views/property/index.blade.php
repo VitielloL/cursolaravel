@@ -1,6 +1,8 @@
-<h1>Listagem de produtos</h1>
+@extends('property.master')
 
-<p><a href="<?=url('/imoveis/novo');?>"> Cadastrar novo imóvel</a></p>
+@section('content')
+
+<h1>Listagem de produtos</h1>
 
 <?php
 
@@ -30,3 +32,7 @@ if (!empty($properties)){
 
     echo"</table>";
 }
+
+?>
+
+@endsection
