@@ -1,8 +1,8 @@
 @extends('property.master')
 
 @section('content')
-
-<h1>Pagina Single</h1>
+<div class="container my-4">
+{{-- <h1>Pagina Single</h1> --}}
 
 <?php
 
@@ -24,6 +24,6 @@
     }
 
     ?>
-
+</div>
 @endsection
 

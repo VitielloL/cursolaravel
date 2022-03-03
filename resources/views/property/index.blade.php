@@ -1,19 +1,19 @@
 @extends('property.master')
 
 @section('content')
-
-<h1>Listagem de produtos</h1>
+<div class="container my-4">
+<h1>Listagem de Produtos</h1>
 
 <?php
 
 if (!empty($properties)){
-    echo"<table>";
-    echo"<tr>
-            <td>Titulo</td>
+    echo"<table class='table table-striped table-hover'>";
+    echo"<thead class='bg-primary text-white'>
+            <td>Título</td>
             <td>Valor de locação</td>
             <td>Valor de Compra</td>
             <td>Ações</td>
-        </tr>";
+        </thead>";
 
 
     foreach($properties as $property){
@@ -34,5 +34,5 @@ if (!empty($properties)){
 }
 
 ?>
-
+</div>
 @endsection
