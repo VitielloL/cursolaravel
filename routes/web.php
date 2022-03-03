@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::view('/form','form');
+
+
 Route::get('/imoveis','PropertyController@index');
 
 Route::get('/imoveis/novo','PropertyController@create');
@@ -29,6 +32,10 @@ Route::put('/imoveis/update/{name}','PropertyController@update');
 Route::get('/imoveis/remover/{name}','PropertyController@destroy');
 
 
+Route::get('/users/1', 'UserController@index');
+Route::get('/getData', 'UserController@getData');
+
+Route::post ('/postData', 'UserController@postData');
 // nova forma de fazer versão 8 em diante
 // Route::get('/imoveis',
 // [PropertyController::class,'index']);
